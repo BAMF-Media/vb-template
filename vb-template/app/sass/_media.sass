@@ -1,0 +1,226 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+//Large: ≥992px -- 1200px
++media-breakpoint-down(lg)
+
+
+  .signUpSection
+    .h1
+      font-size: 60px
+
+  .cupsSection
+    .h2
+      font-size: 60px
+    p
+      width: 90%
+    .cupsImg
+      top: 0
+    .cupsWrap
+      &:before
+        left: -50px
+    &.active
+      .cupsImg
+        top: 0
+  .strapsSection
+    p
+      width: 100%
+    .cupsWrapBottom
+      &:before
+        left: 0
+
+  .referSection
+    .h2
+      font-size: 55px
+
+//Medium: ≥768px -- 992px
++media-breakpoint-down(md)
+  .header
+    .headerWrap
+      background: rgba(227, 192, 169, 0.5)
+      .rightHeader
+        width: 100%
+        .menu
+          background: $brown
+          padding-top: 109px
+          display: none
+          position: fixed
+          top: 0
+          left: 0
+          height: 100%
+          width: 100%
+          li
+            margin-right: 0
+            margin-bottom: 25px
+            text-align: center
+            a
+              font-size: 22px
+
+      .leftHeader
+        .logo
+          img
+            position: relative
+            z-index: 2
+  .hamburger
+    display: block
+    margin-left: auto
+    z-index: 100
+    position: relative
+
+  .signUpSection
+    .h1
+      font-size: 50px
+    p
+      font-size: 30px
+    .topForm
+      .input
+        height: 50px
+      .submitBtn
+        margin-top: 0px
+        height: 50px
+
+  .cupsSection
+    .h2
+      font-size: 50px
+    p
+      width: 100%
+
+  .strapsSection
+    .strapsImg
+      width: 350px
+      top: -150px
+      &.active
+        top: -150px
+    .ribbingImg
+      width: 350px
+
+    .cupsWrapTop
+      &:before
+        width: 150px
+    .cupsWrapBottom
+      &:before
+        width: 150px
+  .cupsSection
+    .cupsWrap
+      &:before
+        width: 150px
+        left: 0
+
+
+  .vibrantBra
+    .btnLinks
+      font-size: 14px
+    img
+      height: auto
+//Small: ≥576px -- 768px
++media-breakpoint-down(sm)
+
+  .header
+    .headerWrap
+      height: 80px
+      padding-right: 30px
+      padding-left: 30px
+      .leftHeader
+        .logo
+          img
+            width: 55px
+  .arrowWrap
+    img
+      display: none
+  .signUpSection
+    background-position: right -235px center
+    .arrowWrap
+      img
+        display: inline-block
+
+  .cupsSection
+    padding: 50px 0 50px 0 !important
+    .cupsWrap
+      &:before
+        display: none
+    .cupsImg
+      position: static
+      width: 400px
+      margin: 0 auto
+
+  .strapsSection
+    padding: 0px 0 50px 0 !important
+    .strapsImg
+      position: static
+    .ribbingImg
+      position: static
+    .cupsWrapTop
+      &:before
+        display: none
+    .cupsWrapBottom
+      &:before
+        display: none
+  .vibrantBra
+    padding: 50px 0 10px 0 !important
+    .h2
+      font-size: 50px
+      margin-top: 0
+      margin-bottom: 15px
+    .btnLinks
+      margin-bottom: 35px
+//Extra small: >0 -- 576
++media-breakpoint-down(xs)
+
+  .signUpSection
+    .h1
+      font-size: 32px
+    p
+      font-size: 22px
+    .topForm
+      .input
+        height: 40px
+        width: 100%
+        font-size: 15px
+        &::placeholder
+          font-size: 15px
+      .submitBtn
+        height: 40px
+        font-size: 15px
+        width: 50%
+    .arrowWrap
+      bottom: 35px
+      img
+        width: 40px
+
+
+  .cupsSection
+    padding: 40px 0 20px 0 !important
+    .h2
+      font-size: 30px
+    .cupsImg
+      width: 300px
+    p
+      font-size: 17px
+    .h3
+      margin-top: 15px
+
+
+
+
+
+  .strapsSection
+    .strapsImg
+      width: 300px
+    .ribbingImg
+      width: 300px
+    p
+      font-size: 17px
+    .h3
+      margin-top: 15px
+
+  .vibrantBra
+    padding: 40px 0 10px 0 !important
+    .h2
+      font-size: 30px
+

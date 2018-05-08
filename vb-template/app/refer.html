@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>The Vibrant Body Company</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#E3C0A9">
+    <!-- Custom Browsers Color End -->
+
+    <!--[if IE]>
+    <script type="text/javascript">
+        var console = {
+            log: function () {
+            }
+        };
+    </script>
+    <![endif]-->
+    <style>
+
+
+        /* Common styles
+        * --------------------------------------- */
+
+        /*.wrap {*/
+        /*width: 1180px;*/
+        /*height: 100%;*/
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+        /*position: relative;*/
+        /*}*/
+
+        /*.box {*/
+        /*text-align: left;*/
+        /*color: #808080;*/
+        /*font-size: 1.2em;*/
+        /*line-height: 1.6em;*/
+        /*}*/
+
+        /* Section 0
+        * --------------------------------------- */
+        /*#section0 {*/
+        /*padding: 60px 0;*/
+        /*}*/
+
+        /*#section0 img {*/
+        /*height: 100%;*/
+        /*margin: 40px 0 0 0;*/
+        /*}*/
+
+        /* Section 1
+        * --------------------------------------- */
+        /*#section1 img {*/
+        /*position: absolute;*/
+        /*left: 40px;*/
+        /*top: 100px;*/
+        /*}*/
+
+        /*#section1 .box {*/
+        /*position: absolute;*/
+        /*top: 50%;*/
+        /*left: 50%;*/
+        /*margin-top: -192px;*/
+        /*margin-left: 89px;*/
+        /*width: 395px;*/
+        /*z-index: 1;*/
+        /*}*/
+
+        /*#section1 .imgsContainer {*/
+        /*display: block;*/
+        /*position: absolute;*/
+        /*z-index: 1;*/
+        /*top: 42%;*/
+        /*left: 58%;*/
+        /*margin-top: -325px;*/
+        /*margin-left: -747px;*/
+        /*width: 800px;*/
+        /*height: 696px;*/
+        /*}*/
+
+        /*#section1 img {*/
+        /*height: 100%;*/
+        /*}*/
+
+        /*screen resolutions between 620px and 800px*/
+        @media all and (min-width: 620px) and (max-width: 800px) {
+            /*#section1 .imgsContainer {*/
+            /*margin-top: -278px;*/
+            /*margin-left: -685px;*/
+            /*width: 647px;*/
+            /*height: 563px;*/
+            /*}*/
+        }
+
+        /*screen resolutions lower than 620px*/
+        @media all and (max-width: 620px) {
+            /*#section1 .imgsContainer {*/
+            /*margin-top: -208px;*/
+            /*margin-left: -516px;*/
+            /*width: 534px;*/
+            /*height: 464px;*/
+            /*}*/
+        }
+
+        /*#iphone2 {*/
+        /*z-index: 10;*/
+        /*}*/
+
+        /*#iphone2.active {*/
+        /*-webkit-transform: translate3d(-134px, 0px, 0px);*/
+        /*-moz-transform: translate3d(-134px, 0px, 0px);*/
+        /*-ms-transform: translate3d(-134px, 0px, 0px);*/
+        /*transform: translate3d(-134px, 0px, 0px);*/
+        /*}*/
+
+        /*#iphone3 {*/
+        /*z-index: 12;*/
+        /*}*/
+
+        /*#iphone3.active {*/
+        /*-webkit-transform: translate3d(213px, 0px, 0px);*/
+        /*-moz-transform: translate3d(213px, 0px, 0px);*/
+        /*-ms-transform: translate3d(213px, 0px, 0px);*/
+        /*transform: translate3d(213px, 0px, 0px);*/
+        /*}*/
+
+        /*#iphone4 {*/
+        /*z-index: 11;*/
+        /*left: 140px;*/
+        /*}*/
+
+        /*#iphone4.active {*/
+        /*-webkit-transform: translate3d(548px, 0px, 0px);*/
+        /*-moz-transform: translate3d(548px, 0px, 0px);*/
+        /*-ms-transform: translate3d(548px, 0px, 0px);*/
+        /*transform: translate3d(548px, 0px, 0px);*/
+        /*}*/
+
+        /*!* Section 2*/
+        /** --------------------------------------- *!*/
+        /*#section2 img {*/
+        /*position: absolute;*/
+        /*}*/
+
+        /*#section2 .imgsContainer,*/
+        /*#staticImg .imgsContainer,*/
+        /*#section3 .imgsContainer {*/
+        /*position: absolute;*/
+        /*z-index: 1;*/
+        /*left: 50%;*/
+        /*display: block;*/
+        /*margin-top: -288px;*/
+        /*margin-left: -636px;*/
+        /*width: 0;*/
+        /*height: 0;*/
+
+        /*-webkit-transition: all 1.2s ease-in-out;*/
+        /*-moz-transition: all 1.2s ease-in-out;*/
+        /*-o-transition: all 1.2s ease-in-out;*/
+        /*transition: all 1.2s ease-in-out;*/
+        /*}*/
+
+        /*#section2.moveUp .imgsContainer {*/
+        /*top: 50%;*/
+        /*}*/
+
+        /*#section2.moveDown .imgsContainer,*/
+        /*#staticImg .imgsContainer {*/
+        /*top: 90%;*/
+        /*}*/
+
+        /*#section2.active .imgsContainer {*/
+        /*top: 50%;*/
+        /*}*/
+
+        /*#section2 .box {*/
+        /*top: 22%;*/
+        /*left: 42%;*/
+        /*position: absolute;*/
+        /*width: 582px;*/
+        /*}*/
+
+        /*#iphone-yellow {*/
+        /*top: -35px;*/
+        /*left: -222px;*/
+        /*}*/
+
+        /*#iphone-red {*/
+        /*top: -194px;*/
+        /*left: 106px;*/
+        /*}*/
+
+        /*#iphone-blue {*/
+        /*top: 320px;*/
+        /*left: 448px;*/
+        /*}*/
+
+        /*#iphone-green {*/
+        /*left: 106px;*/
+        /*position: absolute;*/
+        /*}*/
+
+        /*#staticImg {*/
+        /*display: block;*/
+        /*position: absolute;*/
+        /*z-index: 1;*/
+        /*top: 200%;*/
+        /*left: 0;*/
+        /*width: 100%;*/
+        /*min-width: 980px;*/
+        /*height: 100%;*/
+
+        /*-webkit-transition: all 0.7s ease-out;*/
+        /*-moz-transition: all 0.7s ease-out;*/
+        /*-o-transition: all 0.7s ease-out;*/
+        /*transition: all 0.7s ease-out;*/
+
+        /*-webkit-backface-visibility: hidden;*/
+        /*-webkit-perspective: 1000;*/
+        /*}*/
+
+        /*#staticImg.moveDown {*/
+        /*-webkit-transform: translate3d(0, 100%, 0);*/
+        /*-ms-transform: translate3d(0, 100%, 0);*/
+        /*transform: translate3d(0, 100%, 0);*/
+        /*}*/
+
+        /*#staticImg.moveUp {*/
+
+        /*-webkit-transform: translate3d(0, 0, 0);*/
+        /*-ms-transform: translate3d(0, 0, 0);*/
+        /*transform: translate3d(0, 0, 0);*/
+        /*}*/
+
+        /*#staticImg.moveDown .imgsContainer {*/
+        /*top: 50%;*/
+        /*}*/
+
+        /*#staticImg.moveDown img {*/
+        /*top: 155px;*/
+        /*}*/
+
+        /*#staticImg.active .imgsContainer {*/
+        /*top: 50%;*/
+        /*}*/
+
+        /*#staticImg.active img {*/
+        /*top: 487px;*/
+        /*}*/
+
+        /*!* Section 3*/
+        /** --------------------------------------- *!*/
+        /*#section3 .imgsContainer {*/
+        /*top: 50%;*/
+        /*}*/
+
+        /*#section3 img {*/
+        /*top: 155px;*/
+        /*left: 455px;*/
+        /*position: absolute;*/
+        /*}*/
+
+        /*#section3 .box {*/
+        /*text-align: center;*/
+        /*margin: 10% 0 0 0;*/
+        /*}*/
+
+        /* Overwriting fullPage.js tooltip color
+        * --------------------------------------- */
+        .fp-tooltip {
+            color: #AAA;
+        }
+
+        #fp-nav span, .fp-slidesNav span {
+            border-color: #AAA;
+        }
+
+        #fp-nav li .active span, .fp-slidesNav .active span {
+            background: #AAA;
+        }
+
+    </style>
+
+
+    <style>
+        .fp-tooltip {
+            color: #AAA;
+        }
+
+        #fp-nav span, .fp-slidesNav span {
+            border-color: #AAA;
+        }
+
+        #fp-nav li .active span, .fp-slidesNav .active span {
+            background: #AAA;
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="css/main.min.css">
+
+
+</head>
+
+<body>
+
+<header class="header">
+    <div class="headerWrap">
+        <div class="leftHeader">
+            <div class="logo"><a href="https://vibrantbodycompany.com" target="_blank"><img src="img/logo/logo.svg"
+                                                                                            alt=""></a>
+            </div>
+        </div>
+
+        <div class="rightHeader">
+
+            <button class="hamburger hamburger--collapse " type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <nav id="nav">
+                <ul id="menu" class="menu">
+                    <li class="logo"></li>
+                    <li data-menuanchor="firstPage"><a href="#firstPage"> Sign Up</a></li>
+                    <li data-menuanchor="secondPage"><a href="#secondPage">Refer</a></li>
+                    <li data-menuanchor="3rdPage"><a href="#3rdPage">About</a></li>
+                    <li data-menuanchor="4rdPage"><a href="#4rdPage">Shop</a></li>
+
+                </ul>
+            </nav>
+
+
+        </div>
+    </div>
+</header>
+
+
+<div id="fullpage" class="fullpage">
+    <div class="section signUpSection fp-auto-height-responsive" id="section0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="h1">Share Your Health <span>With Your Loved Ones</span>
+                    </h1>
+                    <p>Get a free bra</p>
+                    <!--<form class="topForm" id="participation_form">-->
+                        <!--<input type="text" placeholder="Enter full name" class="inputName input" id="firstName">-->
+                        <!--<input type="text" placeholder="Enter email adress" class="inputEmail input" id="email">-->
+                        <!--<button type="submit" class="submitBtn">Sign Up</button>-->
+                        <!--<i class="fas fa-angle-down"></i>-->
+                    <!--</form>-->
+
+
+
+
+                </div>
+                <div class="col-md-4">
+
+                </div>
+
+                <div class="arrowWrap"><a href="#secondPage"><img src="img/arrows/down-arrow.svg" alt="down-arrow"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div data-vl-widget="embedForm"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="section referSection fp-auto-height-responsive " id="section4">
+
+        <div class="containerWrap">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="h2">Refer a Friend, Get Free Products</h2>
+                </div>
+                <!--<div class="col-md-4">-->
+                    <!--<p class="number">1</p>-->
+                    <!--<div class="infoWrap">-->
+                        <!--<p class="desc">Refer <span>1</span> friend </p>-->
+                        <!--<p class="desc">Get a <span>$15 discount</span></p>-->
+                    <!--</div>-->
+                    <!--<a href="#" class="inviteBtn">Invite</a>-->
+                <!--</div>-->
+
+                <!--<div class="col-md-4">-->
+                    <!--<p class="number">2</p>-->
+                    <!--<div class="infoWrap">-->
+                        <!--<p class="desc">Refer <span>2</span> friend </p>-->
+                        <!--<p class="desc">Get a <span>$15 discount</span></p>-->
+                    <!--</div>-->
+                    <!--<a href="#" class="inviteBtn">Invite</a>-->
+                <!--</div>-->
+                <!--<div class="col-md-4">-->
+                    <!--<p class="number">3</p>-->
+                    <!--<div class="infoWrap">-->
+                        <!--<p class="desc">Refer <span>3</span> friend </p>-->
+                        <!--<p class="desc">Get a <span>$15 discount</span></p>-->
+                    <!--</div>-->
+                    <!--<a href="#" class="inviteBtn">Invite</a>-->
+                <!--</div>-->
+
+
+                <div data-vl-widget="milestoneWidget"></div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="section cupsSection fp-auto-height-responsive " id="section1">
+
+        <div class="containerWrap">
+            <div class="row">
+                <div class="col-12 ">
+                    <h2 class="h2 ">What you put on matters. </h2>
+
+                </div>
+                <div class="col-md-6 ">
+                    <h3 class="h3">The Cups</h3>
+                    <p>
+                        Incredibly comfortable and naturally sexy. The Vibrant bra cradles your body and gives sideways
+                        cup support. This patented design creates natural curves. The cups are made with 100%
+                        non-harmful materials.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+
+
+                    <div class="cupsWrap"><img src="img/cups/featured-cups.png" alt="featured-cups"
+                                               class="img-responsive cupsImg"></div>
+
+                </div>
+
+                <div class="arrowWrap"><a href="#3rdPage"><img src="img/arrows/down-arrow.svg" alt="down-arrow"></a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="section strapsSection fp-auto-height-responsive" id="section2">
+        <div class="containerWrap">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-1 order-md-0 ">
+                    <div class="cupsWrapTop">
+                        <img src="img/strapsRibbing/featured-straps.png" alt="featured-ribbing"
+                             class="img-responsive strapsImg">
+                    </div>
+
+                </div>
+                <div class="col-md-6 order-0 order-md-1">
+                    <h3 class="h3">The Straps</h3>
+
+                    <p>They never fall down and they don’t dig in. They’re slightly wider and more centered on your
+                        back, improving posture.</p>
+                </div>
+                <div class="col-md-6 order-2 order-md-2">
+
+                    <h3 class="h3"> The Ribbing</h3>
+
+                    <p>Telescoping boning moves when you move and supports you from every angle.
+                    </p>
+                </div>
+                <div class="col-md-6 order-3 order-md-3">
+                    <div class="cupsWrapBottom">
+                        <img src="img/strapsRibbing/featured-ribbing.png" alt="featured-ribbing"
+                             class="img-responsive ribbingImg">
+                    </div>
+                </div>
+
+                <div class="arrowWrap"><a href="#3rdPage"><img src="img/arrows/down-arrow.svg" alt="down-arrow"></a>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section vibrantBra fp-auto-height-responsive " id="section3" style="justify-content: center;">
+
+
+        <div class="containerWrap">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="h2 ">The <span>Vibrant</span> Bra </h2>
+
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <a href="#" target="_blank"> <img src="img/vibrantBra/mediumCup.png" alt="The Vibrant Bra"
+                                                      class="img-responsive"></a>
+
+                    <h4 class="h4">Medium Cup Coverage </h4>
+                    <p>For the woman who tends to have a <span>little extra room to fill</span>
+                    </p>
+                    <a href="#" target="_blank" class="btnLinks">Shop Medium Cup Coverage</a>
+                </div>
+                <div class="col-md-6">
+
+                    <a href="#" target="_blank"> <img src="img/vibrantBra/fullCup.png" alt="The Vibrant Bra"
+                                                      class="img-responsive"></a>
+                    <h4 class="h4">Full Cup Coverage </h4>
+                    <p>For the woman who tends to have a <span>little extra overflow.</span>
+
+
+                    </p>
+                    <a href="#" target="_blank" class="btnLinks">Shop Full Cup Coverage</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<script src="js/scripts.min.js"></script>
+<!--VIRAL LOOPS START-->
+
+<script>!function(){var a=window.VL=window.VL||{};return a.instances=a.instances||{},a.invoked?void(window.console&&console.error&&console.error("VL snippet loaded twice.")):(a.invoked=!0,void(a.load=function(b,c,d){var e={};e.publicToken=b,e.config=c||{};var f=document.createElement("script");f.type="text/javascript",f.id="vrlps-js",f.defer=!0,f.src="https://app.viral-loops.com/client/vl/vl.min.js";var g=document.getElementsByTagName("script")[0];return g.parentNode.insertBefore(f,g),f.onload=function(){a.setup(e),a.instances[b]=e},e.identify=e.identify||function(a,b){e.afterLoad={identify:{userData:a,cb:b}}},e.pendingEvents=[],e.track=e.track||function(a,b){e.pendingEvents.push({event:a,cb:b})},e.pendingHooks=[],e.addHook=e.addHook||function(a,b){e.pendingHooks.push({name:a,cb:b})},e.$=e.$||function(a){e.pendingHooks.push({name:"ready",cb:a})},e}))}();var campaign=VL.load("z337sUeP8haprEaZ2F_mmtFip7Y",{autoLoadWidgets:!0});</script>
+<!-- VIRAL LOOPS END-->
+
+
+<script>
+    $("#participation_form").submit(function (e) {
+        e.preventDefault();
+        participate(document.getElementById("firstName").value, document.getElementById("email").value);
+    });
+
+    function participate(fname, email) {
+//submit the participant to Viral Loops
+        campaign.identify({
+            firstname: fname,
+            email: email
+        });
+    }
+
+
+    // //redirect them to thank-you after signup
+    // campaign.addHook("stageChange", function (e) {
+    //     if (e.stage === "postIdentify") {
+    //         location.href = "/refer.html";
+    //     }
+    // });
+</script>
+
+
+</body>
+</html>

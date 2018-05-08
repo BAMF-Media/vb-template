@@ -1,0 +1,515 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+  color: $darkGrey
+
+
+::selection
+  background-color: $accent
+  color: #fff
+  text-transform: uppercase
+
+a:hover
+  text-decoration: none
+
+
+html, body
+  height: 100%
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.45
+  font-family: $default-font
+  font-weight: 400
+  overflow-x: hidden
+  input, textarea
+    border: #666 1px solid
+    outline: none
+    &:focus:required:invalid
+      border-color: red
+    &:required:valid
+      border-color: green
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+
+button
+  &:focus
+    outline: none
+
+.hamburger
+  display: none
+  line-height: 1
+  .hamburger-inner,
+  .hamburger-inner:after,
+  .hamburger-inner:before
+    background: $white
+
+
+// right navigation start
+#fp-nav
+  ul
+    li
+      margin-bottom: 20px
+      a
+        span
+          background: $white
+          height: 12px
+          width: 12px
+          margin: -6px 0 0 -6px
+          opacity: 0.3
+        &.active
+          span
+            background: $white
+            opacity: 1
+
+
+// right navigation end
+
+
+.section
+  text-align: center
+  overflow: hidden
+  display: flex
+  align-items: center
+
+
+.h1
+  font-size: 70px
+  color: $white
+  line-height: 1.2em
+  font-weight: 500
+  //span
+  //  font-style: italic
+
+
+.h2
+  font-size: 72px
+  color: $white
+  line-height: 1.2em
+  //span
+  //  font-style: italic
+.h3
+  font-size: 30px
+  color: $white
+  line-height: 1.2em
+  span
+    font-style: italic
+.h4
+  font-size: 25px
+  color: $white
+  font-weight: bold
+
+
+
+.input
+  display: flex
+  align-items: center
+  justify-content: center
+  color: $darkGrey
+  text-transform: uppercase
+
+
+
+.arrowWrap
+  position: absolute
+  bottom: 20px
+  right: 0
+  left: 0
+  img
+    width: 50px
+    height: auto
+    &:hover
+      cursor: pointer
+
+
+.header
+
+  .headerWrap
+    position: fixed
+    height: 100px
+    z-index: 99
+    flex: 0 1 auto
+    top: 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    padding: 0 75px
+    margin: 0 auto
+    .leftHeader
+      .logo
+        img
+          width: 70px
+          height: auto
+    .rightHeader
+      .menu
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        li
+          margin-right: 100px
+          &:last-child
+            margin-right: 0
+          &.active
+            a
+              border-bottom: 2px solid $white
+              transition: 0.3s
+          a
+            color: $white
+            text-transform: uppercase
+            font-size: 18px
+            border-bottom: 2px solid transparent
+            font-family: $gilroy
+            font-weight: 700
+
+.signUpSection
+  background: url(../img/header/mainHeader.png) no-repeat center center
+  background-size: cover
+  text-align: center
+  p
+    font-weight: 700
+    font-size: 40px
+    color: $grey
+    margin-bottom: 20px
+
+  .h1
+    &:before
+      content: '&'
+      position: absolute
+      font-size: 250px
+      color: rgba(255,255,255,.2)
+      top: 155px
+      left: 65px
+      font-family: $avenir
+      font-weight: bold
+
+
+      
+      
+      
+      
+  .topForm
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .input
+      width: 500px
+      height: 55px
+      opacity: 0.7
+      border-radius: 40px
+      padding: 0 40px
+      font-size: 20px
+      margin-bottom: 10px
+      font-size: 20px
+      font-family: $avenir
+      font-weight: 500
+      border: 0px
+      text-align: center
+      transition: 0.3s
+      &:focus
+        opacity: 1
+      &::placeholder
+        font-size: 20px
+        font-family: $avenir
+        font-weight: 400
+        text-align: center
+
+    .submitBtn
+      height: 55px
+      display: flex
+      align-items: center
+      justify-content: center
+      color: $white
+      border-radius: 40px
+      background: $brown
+      border: 2px solid $white
+      width: 230px
+      font-size: 20px
+      text-transform: uppercase
+      font-family: $avenir
+      font-weight: 900
+      margin-top: 20px
+      transition: 0.3s
+      &:hover
+        cursor: pointer
+        background: #dcb59c
+
+
+.referSection
+  background: #E7DFDC
+  display: flex
+  align-content: center
+  justify-content: center
+  .containerWrap
+    width: 90%
+    margin: 0 auto
+  .h2
+    color: #3C3C3C
+  .infoWrap
+    background: $white
+    border-radius: 10px
+    display: inline-block
+    margin: 0 auto
+    padding-top: 15px
+    padding-bottom: 20px
+    width: 70%
+    color: #3C3C3C
+    font-size: 20px
+    margin-top: -30px
+    font-family: $avenir
+    font-weight: 500
+
+  .number
+    color: rgba(255,255,255,.35)
+    font-size: 320px
+    font-family: $scalaCapsBold
+    line-height: 1
+    font-weight: 700
+
+  .desc
+    margin-bottom: 5px
+    span
+      font-weight: bold
+      color: $grey
+  .inviteBtn
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    color: $white
+    border-radius: 40px
+    background: $brown
+    border: 2px solid $white
+    font-size: 20px
+    padding: 11.5px 60px
+    text-transform: uppercase
+    font-family: $avenir
+    font-weight: 900
+    transition: 0.3s
+    margin: -20px auto 0 auto
+    z-index: 1
+    position: relative
+
+
+    &:hover
+      cursor: pointer
+      background: #dcb59c
+
+
+  
+
+.cupsSection
+  display: flex
+  align-content: center
+  justify-content: center
+  background: url(../img/cups/cupsSection.png) no-repeat center center
+  background-size: cover
+  color: $white
+  .containerWrap
+    width: 90%
+    margin: 0 auto
+  .h2
+    text-align: left
+  .cupsImg
+    transition: all 1.2s ease-out
+    position: absolute
+    right: -300px
+    top: -80px
+  .cupsWrap
+    &:before
+      content: ''
+      position: absolute
+      bottom: 10px
+      left: -135px
+      background: url(../img/arrows/leftTopArrow.svg) no-repeat center center
+      background-size: contain
+      width: 180px
+      height: 90px
+      z-index: 2
+  &.active
+    .cupsWrap
+      &:before
+        animation: 2s ease 0s normal forwards 1 fadein
+    .cupsImg
+      right: 0
+      top: -80px
+    .h3
+      &:before
+        content: ''
+        position: absolute
+        bottom: -21px
+        left: 0
+        background: url(../img/arrows/lines.svg) no-repeat center center
+        background-size: contain
+        width: 130px
+        height: 20px
+        animation: 1s ease 0s normal forwards 1 fadein
+  .h3
+    margin-top: 40px
+    text-align: left
+    margin-bottom: 30px
+    position: relative
+
+  p
+    text-align: left
+    width: 80%
+    font-size: 21px
+
+@keyframes fadein
+  0%
+    opacity: 0
+  66%
+    opacity: 0
+  100%
+    opacity: 1
+
+
+.strapsSection
+  color: $white
+  text-align: left
+  background: url(../img/cups/cupsSection.png) no-repeat center center
+  background-size: cover
+  .containerWrap
+    width: 90%
+    margin: 0 auto
+  .strapsImg
+    width: 450px
+    margin: 0 auto
+    position: absolute
+    transition: all 1.2s ease-out
+    left: -300px
+    top: -250px
+
+
+  .cupsWrapTop
+    &:before
+      content: ''
+      position: absolute
+      bottom: -21px
+      right: 0
+      background: url(../img/arrows/rightTopArrow.svg) no-repeat center center
+      background-size: contain
+      width: 250px
+      height: 150px
+      z-index: 2
+  &.active
+    .strapsImg
+      left: 0
+      top: -250px
+    .h3
+      &:before
+        content: ''
+        position: absolute
+        bottom: -17px
+        right: -20px
+        background: url(../img/arrows/shortLines.svg) no-repeat center center
+        background-size: contain
+        width: 130px
+        height: 20px
+        animation: 1s ease 0s normal forwards 1 fadein
+
+    .cupsWrapTop
+      &:before
+        animation: 2s ease 0s normal forwards 1 fadein
+
+  .cupsWrapBottom
+    &:before
+      content: ''
+      position: absolute
+      top: -25px
+      left: -60px
+      background: url(../img/arrows/leftBottomArrow.svg) no-repeat center center
+      background-size: contain
+      width: 250px
+      height: 150px
+      z-index: 2
+  &.active
+    .ribbingImg
+      right: 0
+      top: -250px
+    .cupsWrapBottom
+      &:before
+        animation: 2s ease 0s normal forwards 1 fadein
+  .ribbingImg
+    width: 450px
+    margin: 0 auto
+    position: absolute
+    transition: all 1.2s ease-out
+    right: -300px
+    top: -250px
+
+  .h3
+    margin-top: 40px
+    margin-bottom: 30px
+    display: inline-block
+    position: relative
+
+
+  p
+    font-size: 21px
+    width: 80%
+    position: relative
+    z-index: 1
+  .arrowWrap
+    text-align: center
+
+
+.vibrantBra
+  background: url(../img/vibrantBra/vibraBg.png) no-repeat center center
+  background-size: cover
+  color: $white
+  align-items: center
+  .containerWrap
+    width: 55%
+  .h2
+    margin-top: 22px
+    margin-bottom: 5px
+  .h4
+    margin-top: 5px
+    margin-bottom: 0px
+  img
+    height: 315px
+    margin: 0 auto 0 auto
+    border: 10px solid $lightBrown
+    transition: 0.3s
+    &:hover
+      transform: scale(1.04)
+  p
+    font-family: $avenir
+    font-weight: 400
+    font-size: 17px
+    margin-bottom: 10px
+    span
+      display: block
+  .btnLinks
+    display: inline-flex
+    align-items: center
+    padding-right: 30px
+    padding-left: 30px
+    padding-top: 10px
+    padding-bottom: 10px
+    border-radius: 30px
+    background: $lightBrown
+    font-size: 15px
+    color: $darkBlack
+    text-transform: uppercase
+    font-family: $avenir
+    font-weight: 900
+    transition: 0.3s
+    &:hover
+      background: #dcb59c
+      color: $white
+
+
+@import "media"
+// Always at the end
